@@ -21,6 +21,17 @@ hr {
     height: 100vh;
 }
 
-table, th, td {
-    border: 1px solid gray;
+tbody {
+    border-top: 5px solid gray ;
+    border-bottom:5px solid gray;
+
 }
+
+table, th, td {
+    border: 4px double;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+
+

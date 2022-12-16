@@ -40,14 +40,70 @@
         
         <div class="row">
             <div class="col">
-                <strong>Invoice To:</strong><address>Mark Davis<br>3333 AI Davis Way<br>Las Vegas, NY 89118</address> 
+                <strong>Invoice To:</strong>
+                <address>Mark Davis<br>3333 AI Davis Way<br>Las Vegas, NY 89118</address> 
             </div>
             <!--Why doesn't the address text line up directly under "Pay To"???-->
-            <div class="col d-flex flex-row justify-content-end">
-                <strong>Pay To:</strong><address><br>Idea Foundry, lrc.<br>2705 N. Enterprise St.<br>Kernersville, NC 27284</address> 
+            <div class="col">
+                <div class="d-flex justify-content-end">
+                    <strong>Pay To:</strong></div>
+                <div class="d-flex justify-content-end">
+                    <address>Idea Foundry, lrc.<br>2705 N. Enterprise St.<br>Kernersville, NC 27284</address>
+                </div> 
             </div>
         </div>
-        
+
+        <div class="row mt-3">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
+                        <th>Rate</th>
+                        <th style="text-align: center;">QTY</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Design</td>
+                        <td>Website Design</td>
+                        <td style="text-align: end;">$60.00</td>
+                        <td style="text-align: center;">10</td>
+                        <td style="text-align:end">$600.00</td>
+                    </tr>
+                    <tr>
+                        <td>Development</td>
+                        <td>Website Development</td>
+                        <td style="text-align:end">$150.00</td>
+                        <td style="text-align: center;">10</td>
+                        <td style="text-align:end">$1,500.00</td>
+                    </tr>
+                    <tr>
+                        <td>Deployment</td>
+                        <td>Deployment and Hosting</td>
+                        <td style="text-align:end">$450.00</td>
+                        <td style="text-align: center;">1</td>
+                        <td style="text-align:end">$450.00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row" colspan="4">Sub Total:</th>
+                        <td style="text-align:end">$2,500</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" colspan="4">Tax:</th>
+                        <td style="text-align:end">$0.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" colspan="4">Total:</th>
+                        <td style="text-align:end">$2,550</td>
+                    </tr>
+                </tfoot>
+                <caption><strong>Note: </strong>This is a computer generated receipt and does not require a</caption>
+            </table>
+        </div>  
     </div> 
 
 
