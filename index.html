@@ -1,16 +1,18 @@
 <!DOCTYPE html>
+<!--Is the class=h-100 necessary here?  Why?-->
 <html lang="en" class="h-100">
 
 <head>
     <title>Invoice Bootstrap Lab 3</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1 ,shrink-to-fit=no">
-
+<!--this is a later version of Bootstrap than used in the video.  Differences??-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link href="/css/site.css" rel="stylesheet">
 </head>
 
+<!--is the h-100 class neeeded here?  Why-->
 <body class="h100">
     <div class="container border border-2">
         <div class="mt-4 d-flex flex-row-reverse">
@@ -19,7 +21,8 @@
         <div class="row">
            <div class="col">
                 <div>
-                    <img src="/img/IdeaFoundryLogo.png" class="img-fluid" alt="An orange silhouette of a head surrounded by bubbles of various sizes and colors representing a mind map, followed by the words Idea Foundry: We make ideas into reality">
+                    <!--Don't forget the title attribute!!-->
+                    <img src="/img/IdeaFoundryLogo.png" class="img-fluid" title="Idea Foundry Logo" alt="An orange silhouette of a head surrounded by bubbles of various sizes and colors representing a mind map, followed by the words Idea Foundry: We make ideas into reality">
                 </div>
            </div>
            <div class="col content-right">
@@ -43,7 +46,7 @@
                 <strong>Invoice To:</strong>
                 <address>Mark Davis<br>3333 AI Davis Way<br>Las Vegas, NY 89118</address> 
             </div>
-            <!--Why doesn't the address text line up directly under "Pay To"???-->
+            <!--Why doesn't the address text line up directly under "Pay To"??? Answer: Because the strong and address tags need to be wrapped in another <div>-->
             <div class="col">
                 <div class="d-flex justify-content-end">
                     <strong>Pay To:</strong></div>
@@ -106,7 +109,7 @@
         </div>  
     </div> 
 
-
+<!--this is a later version of BS JS .  Differences??-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
