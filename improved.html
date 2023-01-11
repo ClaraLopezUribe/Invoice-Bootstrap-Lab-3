@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>IMPROVED: Invoice Bootstrap Lab 3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 ,shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href="/css/solution.css" rel="stylesheet">
+</head>
+
+<body>
+<!--can a shadow be removed before printing?-->    
+    <div class="container border border-2 rounded p-3 mt-3 mb-3 shadow-lg">
+        <div class="d-flex justify-content-end d-print-none mt-2">
+            <button type="button" class="btn btn-dark" onclick="window.print()">Print Invoice</button>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 align-items-center">
+           <div class="col col-sm-7 d-flex">
+                <div>
+                    <!--Don't forget the title attribute!!-->
+                    <img src="/img/IdeaFoundryLogo.png" class="img-fluid" title="Idea Foundry Logo" alt="An orange silhouette of a head surrounded by bubbles of various sizes and colors representing a mind map, followed by the words Idea Foundry: We make ideas into reality">
+                </div>
+           </div>
+           <div class="col col-sm-5 d-flex mt-2 justify-content-sm-end">
+                <div>
+                    <strong>Client No:</strong>&nbsp;4908
+                </div>
+           </div>
+        </div>   
+
+        <hr class="mt-3">
+        <div class="row row-cols-1 row-cols-sm-2">
+            <div class="col">
+                <div>
+                    <strong>Date:</strong>&nbsp;05/12/2019
+                </div>
+            </div>
+            <div class="col d-flex justify-content-sm-end">
+                <div><strong>Invoice No:</strong> 19005</div>
+            </div>  
+        </div>
+        <hr class="mt-3">
+        
+        <div class="row address">
+            <div class="col">
+                <div>
+                    <strong>Invoice To:</strong>
+                    <address>Mark Davis<br>
+                        3333 AI Davis Way<br>
+                        Las Vegas, NY 89118
+                    </address>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <div>
+                    <strong>Pay To:</strong>
+                    <address>Idea Foundry, lrc.<br>
+                        2705 N. Enterprise St.<br>
+                        Kernersville, NC 27284
+                    </address>
+                </div> 
+            </div>
+        </div>
+        <!--although .style=text-align works just as well, using BS class=text-end saves some typing and reduces chance of syntax error-->
+        <div class="row table-responsive mt-3">
+            <table class="table table-bordered table-striped">
+                <thead class="bg-secondary text-light">
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
+                        <th class="text-end">Rate</th>
+                        <th class="text-center"">QTY</th>
+                        <th class="text-end">Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Design</td>
+                        <td>Website Design</td>
+                        <td style="text-align: end;">$60.00</td>
+                        <td style="text-align: center;">10</td>
+                        <td style="text-align:end">$600.00</td>
+                    </tr>
+                    <tr>
+                        <td>Development</td>
+                        <td>Website Development</td>
+                        <td style="text-align:end">$150.00</td>
+                        <td style="text-align: center;">10</td>
+                        <td style="text-align:end">$1,500.00</td>
+                    </tr>
+                    <tr>
+                        <td>Deployment</td>
+                        <td>Deployment and Hosting</td>
+                        <td style="text-align:end">$450.00</td>
+                        <td style="text-align: center;">1</td>
+                        <td style="text-align:end">$450.00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row" colspan="4">Sub Total:</th>
+                        <td style="text-align:end">$2,500</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" colspan="4">Tax:</th>
+                        <td style="text-align:end">$0.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" colspan="4">Total:</th>
+                        <td style="text-align:end">$2,550</td>
+                    </tr>
+                </tfoot>
+                <caption><strong>Note: </strong>This is a computer generated receipt and does not require a signature.</caption>
+            </table>
+        </div>  
+    </div> 
+
+<!--this is a later version of BS JS .  Differences??-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
